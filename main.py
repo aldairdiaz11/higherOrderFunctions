@@ -8,9 +8,8 @@ def count(predicate: any, itr: iter) -> int:
     return count_reduce
 
 
-def average(itr) -> float:
+def average(itr: iter) -> float:
     # If itr is not iterable, this will generate an iterator.
-    iterable = iter(itr)
     return avg_helper(0, itr, 0)
 
 
